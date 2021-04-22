@@ -1,0 +1,22 @@
+PSNR of low resolution image and high resolution image is 24.4263
+PSNR of predict and high resolution is 25.3418
+PSNR of low resolution image and high resolution image is 25.0398
+PSNR of predict and high resolution is 25.6215
+PSNR of low resolution image and high resolution image is 34.9506
+PSNR of predict and high resolution is 34.9005
+PSNR of low resolution image and high resolution image is 26.6250
+PSNR of predict and high resolution is 27.0954
+PSNR of low resolution image and high resolution image is 25.1637
+PSNR of predict and high resolution is 25.5566
+PSNR of low resolution image and high resolution image is 22.6681
+PSNR of predict and high resolution is 23.2446
+PSNR of low resolution image and high resolution image is 23.9902
+PSNR of predict and high resolution is 24.4366
+PSNR of low resolution image and high resolution image is 26.3472
+PSNR of predict and high resolution is 26.8450
+PSNR of low resolution image and high resolution image is 27.6660
+PSNR of predict and high resolution is 29.0058
+PSNR of low resolution image and high resolution image is 21.8129
+PSNR of predict and high resolution is 22.2765
+Avg. PSNR of lowres images is 25.8690
+Avg. PSNR of reconstructions is 26.4324

@@ -1,0 +1,98 @@
+% Created 2020-12-10 Thu 21:18
+% Intended LaTeX compiler: xelatex
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage[margin=1.5in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{epsf}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{pslatex}
+\usepackage{hyperref}
+\usepackage[adobe-utopia]{mathdesign}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{textgreek}
+\renewcommand*{\textgreekfontmap}{%
+{phv/*/*}{LGR/neohellenic/*/*}%
+{*/b/n}{LGR/artemisia/b/n}%
+{*/bx/n}{LGR/artemisia/bx/n}%
+{*/*/n}{LGR/artemisia/m/n}%
+{*/b/it}{LGR/artemisia/b/it}%
+{*/bx/it}{LGR/artemisia/bx/it}%
+{*/*/it}{LGR/artemisia/m/it}%
+{*/b/sl}{LGR/artemisia/b/sl}%
+{*/bx/sl}{LGR/artemisia/bx/sl}%
+{*/*/sl}{LGR/artemisia/m/sl}%
+{*/*/sc}{LGR/artemisia/m/sc}%
+{*/*/sco}{LGR/artemisia/m/sco}%
+}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+#1\;\delimsize\|\;#2%
+}
+\newcommand{\infdiv}{D\infdivx}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\def\Z{\mathbb Z}
+\def\R{\mathbb R}
+\def\C{\mathbb C}
+\def\N{\mathbb N}
+\def\Q{\mathbb Q}
+\def\noi{\noindent}
+\onehalfspace
+\author{Sandy Urazayev\thanks{University of Kansas (ctu@ku.edu)}}
+\date{320; 12020 H.E.}
+\title{Final Project Proposal\\\medskip
+\large MATH 596}
+\hypersetup{
+ pdfauthor={Sandy Urazayev},
+ pdftitle={Final Project Proposal},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+We live in a rather boring world, full of inconsistencies and patterns that we
+fit our lives into. We still love it and try to capture its best shades for safe
+storing. Unfortunately, time goes and the sharpness of our pictures and data
+speedily fades. My final project would revolve around digital media enhancement
+and resolution improvement. 
+
+We have many different pictures from as long as a century ago. However, by the
+modern standards, they're all of pretty poor quality. Even more modern ones,
+suffer from information and data rotting. I saw a fascinating research that
+explored image quality enhancement by using Convolution Neural
+Networks. \cite{shi2016realtime} What happens is that we apply a pretty
+standard-issue neural network and attach Convolution layers, which are very
+common in visual learning applications. By properly reducing the error during
+backpropagation and feeding smaller-sized images into the network and giving it
+an output of the same image, but bigger sized, we can find such a model that
+would be able to find a correlation between them. This would allow us to give a
+system a never-seen-before low resolution image and expect a better quality
+result. 
+
+\bibliography{proposal}
+\bibliographystyle{ieeetr}
+\end{document}

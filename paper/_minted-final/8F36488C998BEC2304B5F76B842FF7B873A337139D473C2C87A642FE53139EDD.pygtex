@@ -1,0 +1,21 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{k}{def} \PYG{n+nf}{build\PYGZus{}model}\PYG{p}{():}
+    \PYG{n}{layer\PYGZus{}configs} \PYG{o}{=} \PYG{p}{\PYGZob{}}
+        \PYG{l+s+s2}{\PYGZdq{}activation\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}relu\PYGZdq{}}\PYG{p}{,}
+        \PYG{l+s+s2}{\PYGZdq{}kernel\PYGZus{}initializer\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}Orthogonal\PYGZdq{}}\PYG{p}{,}
+        \PYG{l+s+s2}{\PYGZdq{}padding\PYGZdq{}}\PYG{p}{:} \PYG{l+s+s2}{\PYGZdq{}same\PYGZdq{}}\PYG{p}{,}
+    \PYG{p}{\PYGZcb{}}
+
+    \PYG{n}{input\PYGZus{}layer} \PYG{o}{=} \PYG{n}{keras}\PYG{o}{.}\PYG{n}{Input}\PYG{p}{(}\PYG{n}{shape}\PYG{o}{=}\PYG{p}{(}\PYG{k+kc}{None}\PYG{p}{,} \PYG{k+kc}{None}\PYG{p}{,} \PYG{l+m+mi}{1}\PYG{p}{))}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{layers}\PYG{o}{.}\PYG{n}{Conv2D}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{o}{**}\PYG{n}{layer\PYGZus{}configs}\PYG{p}{)(}\PYG{n}{input\PYGZus{}layer}\PYG{p}{)}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{layers}\PYG{o}{.}\PYG{n}{Conv2D}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{o}{**}\PYG{n}{layer\PYGZus{}configs}\PYG{p}{)(}\PYG{n}{x}\PYG{p}{)}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{layers}\PYG{o}{.}\PYG{n}{Conv2D}\PYG{p}{(}\PYG{l+m+mi}{64}\PYG{p}{,} \PYG{l+m+mi}{5}\PYG{p}{,} \PYG{o}{**}\PYG{n}{layer\PYGZus{}configs}\PYG{p}{)(}\PYG{n}{x}\PYG{p}{)}
+    \PYG{n}{x} \PYG{o}{=} \PYG{n}{layers}\PYG{o}{.}\PYG{n}{Conv2D}\PYG{p}{(}\PYG{n}{scaling\PYGZus{}factor} \PYG{o}{**} \PYG{l+m+mi}{2}\PYG{p}{,} \PYG{l+m+mi}{3}\PYG{p}{,} \PYG{o}{**}\PYG{n}{layer\PYGZus{}configs}\PYG{p}{)(}\PYG{n}{x}\PYG{p}{)}
+    \PYG{n}{output\PYGZus{}layer} \PYG{o}{=} \PYG{n}{tf}\PYG{o}{.}\PYG{n}{nn}\PYG{o}{.}\PYG{n}{depth\PYGZus{}to\PYGZus{}space}\PYG{p}{(}\PYG{n}{x}\PYG{p}{,} \PYG{n}{scaling\PYGZus{}factor}\PYG{p}{)}
+
+    \PYG{k}{return} \PYG{n}{keras}\PYG{o}{.}\PYG{n}{Model}\PYG{p}{(}\PYG{n}{input\PYGZus{}layer}\PYG{p}{,} \PYG{n}{output\PYGZus{}layer}\PYG{p}{)}
+
+
+\PYG{n}{model} \PYG{o}{=} \PYG{n}{build\PYGZus{}model}\PYG{p}{()}
+\PYG{n}{model}\PYG{o}{.}\PYG{n}{summary}\PYG{p}{()}
+\end{Verbatim}

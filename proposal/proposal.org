@@ -1,0 +1,82 @@
+#+latex_class: article
+#+latex_class_options: [12pt]
+#+latex_header_extra:\usepackage{amsmath}
+#+latex_header_extra:\usepackage{amssymb}
+#+latex_header_extra:\usepackage{setspace}
+#+latex_header_extra:\usepackage{subcaption}
+#+latex_header_extra:\usepackage{mathtools}
+#+latex_header_extra:\usepackage{xfrac}
+#+latex_header_extra:\usepackage[margin=1.5in]{geometry}
+#+latex_header_extra:\usepackage[utf8]{inputenc}
+#+latex_header_extra:\usepackage{color}
+#+latex_header_extra:\usepackage{epsf}
+#+latex_header_extra:\usepackage{tikz}
+#+latex_header_extra:\usepackage{graphicx}
+#+latex_header_extra:\usepackage{pslatex}
+#+latex_header_extra:\usepackage{hyperref}
+#+latex_header_extra:\usepackage[adobe-utopia]{mathdesign}
+#+latex_header_extra:\usepackage{helvet}
+#+latex_header_extra:\renewcommand{\familydefault}{\sfdefault}
+#+latex_header_extra:\usepackage{textgreek}
+#+latex_header_extra:\renewcommand*{\textgreekfontmap}{%
+#+latex_header_extra:  {phv/*/*}{LGR/neohellenic/*/*}%
+#+latex_header_extra:  {*/b/n}{LGR/artemisia/b/n}%
+#+latex_header_extra:  {*/bx/n}{LGR/artemisia/bx/n}%
+#+latex_header_extra:  {*/*/n}{LGR/artemisia/m/n}%
+#+latex_header_extra:  {*/b/it}{LGR/artemisia/b/it}%
+#+latex_header_extra:  {*/bx/it}{LGR/artemisia/bx/it}%
+#+latex_header_extra:  {*/*/it}{LGR/artemisia/m/it}%
+#+latex_header_extra:  {*/b/sl}{LGR/artemisia/b/sl}%
+#+latex_header_extra:  {*/bx/sl}{LGR/artemisia/bx/sl}%
+#+latex_header_extra:  {*/*/sl}{LGR/artemisia/m/sl}%
+#+latex_header_extra:  {*/*/sc}{LGR/artemisia/m/sc}%
+#+latex_header_extra:  {*/*/sco}{LGR/artemisia/m/sco}%
+#+latex_header_extra:}
+#+latex_header_extra:\makeatletter
+#+latex_header_extra:\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+#+latex_header_extra:\makeatother
+#+latex_header_extra:\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+#+latex_header_extra:  #1\;\delimsize\|\;#2%
+#+latex_header_extra:}
+#+latex_header_extra:\newcommand{\infdiv}{D\infdivx}
+#+latex_header_extra:\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+#+latex_header_extra:\def\Z{\mathbb Z}
+#+latex_header_extra:\def\R{\mathbb R}
+#+latex_header_extra:\def\C{\mathbb C}
+#+latex_header_extra:\def\N{\mathbb N}
+#+latex_header_extra:\def\Q{\mathbb Q}
+#+latex_header_extra:\def\noi{\noindent}
+#+latex_header_extra:\onehalfspace
+#+latex_compiler: xelatex
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+options: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+options: email:t f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t num:nil
+#+language: en
+#+author: Sandy Urazayev
+#+title: Final Project Proposal
+#+subtitle: MATH 596
+#+date: 320; 12020 H.E.
+#+email: University of Kansas (ctu@ku.edu)
+
+We live in a rather boring world, full of inconsistencies and patterns that we
+fit our lives into. We still love it and try to capture its best shades for safe
+storing. Unfortunately, time goes and the sharpness of our pictures and data
+speedily fades. My final project would revolve around digital media enhancement
+and resolution improvement. 
+
+We have many different pictures from as long as a century ago. However, by the
+modern standards, they're all of pretty poor quality. Even more modern ones,
+suffer from information and data rotting. I saw a fascinating research that
+explored image quality enhancement by using Convolution Neural
+Networks. cite:shi2016realtime What happens is that we apply a pretty
+standard-issue neural network and attach Convolution layers, which are very
+common in visual learning applications. By properly reducing the error during
+backpropagation and feeding smaller-sized images into the network and giving it
+an output of the same image, but bigger sized, we can find such a model that
+would be able to find a correlation between them. This would allow us to give a
+system a never-seen-before low resolution image and expect a better quality
+result. 
+
+bibliography:proposal.bib
+bibliographystyle:ieeetr

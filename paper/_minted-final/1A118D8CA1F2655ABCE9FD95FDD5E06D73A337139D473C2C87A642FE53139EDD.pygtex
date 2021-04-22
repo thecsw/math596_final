@@ -1,0 +1,6 @@
+\begin{Verbatim}[commandchars=\\\{\},codes={\catcode`\$=3\catcode`\^=7\catcode`\_=8}]
+\PYG{c+c1}{\PYGZsh{} Basic input\PYGZhy{}output relationships}
+\PYG{n}{image\PYGZus{}dimension} \PYG{o}{=} \PYG{l+m+mi}{300}
+\PYG{n}{scaling\PYGZus{}factor} \PYG{o}{=} \PYG{l+m+mi}{3}
+\PYG{n}{input\PYGZus{}dimension} \PYG{o}{=} \PYG{n}{image\PYGZus{}dimension} \PYG{o}{//} \PYG{n}{scaling\PYGZus{}factorp}
+\end{Verbatim}

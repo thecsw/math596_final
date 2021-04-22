@@ -1,0 +1,95 @@
+#+latex_class: article
+#+latex_class_options: [12pt]
+#+latex_header_extra:\usepackage{amsmath}
+#+latex_header_extra:\usepackage{amssymb}
+#+latex_header_extra:\usepackage{setspace}
+#+latex_header_extra:\usepackage{subcaption}
+#+latex_header_extra:\usepackage{mathtools}
+#+latex_header_extra:\usepackage{xfrac}
+#+latex_header_extra:\usepackage[margin=1in]{geometry}
+#+latex_header_extra:\usepackage[utf8]{inputenc}
+#+latex_header_extra:\usepackage{color}
+#+latex_header_extra:\usepackage{epsf}
+#+latex_header_extra:\usepackage{tikz}
+#+latex_header_extra:\usepackage{graphicx}
+#+latex_header_extra:\usepackage{pslatex}
+#+latex_header_extra:\usepackage{hyperref}
+#+latex_header_extra:\usepackage[adobe-utopia]{mathdesign}
+#+latex_header_extra:\usepackage{helvet}
+#+latex_header_extra:\renewcommand{\familydefault}{\sfdefault}
+#+latex_header_extra:\usepackage{textgreek}
+#+latex_header_extra:\renewcommand*{\textgreekfontmap}{%
+#+latex_header_extra:  {phv/*/*}{LGR/neohellenic/*/*}%
+#+latex_header_extra:  {*/b/n}{LGR/artemisia/b/n}%
+#+latex_header_extra:  {*/bx/n}{LGR/artemisia/bx/n}%
+#+latex_header_extra:  {*/*/n}{LGR/artemisia/m/n}%
+#+latex_header_extra:  {*/b/it}{LGR/artemisia/b/it}%
+#+latex_header_extra:  {*/bx/it}{LGR/artemisia/bx/it}%
+#+latex_header_extra:  {*/*/it}{LGR/artemisia/m/it}%
+#+latex_header_extra:  {*/b/sl}{LGR/artemisia/b/sl}%
+#+latex_header_extra:  {*/bx/sl}{LGR/artemisia/bx/sl}%
+#+latex_header_extra:  {*/*/sl}{LGR/artemisia/m/sl}%
+#+latex_header_extra:  {*/*/sc}{LGR/artemisia/m/sc}%
+#+latex_header_extra:  {*/*/sco}{LGR/artemisia/m/sco}%
+#+latex_header_extra:}
+#+latex_header_extra:\makeatletter
+#+latex_header_extra:\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+#+latex_header_extra:\makeatother
+#+latex_header_extra:\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+#+latex_header_extra:  #1\;\delimsize\|\;#2%
+#+latex_header_extra:}
+#+latex_header_extra:\newcommand{\infdiv}{D\infdivx}
+#+latex_header_extra:\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+#+latex_header_extra:\def\Z{\mathbb Z}
+#+latex_header_extra:\def\R{\mathbb R}
+#+latex_header_extra:\def\C{\mathbb C}
+#+latex_header_extra:\def\N{\mathbb N}
+#+latex_header_extra:\def\Q{\mathbb Q}
+#+latex_header_extra:\def\noi{\noindent}
+#+latex_header_extra:\onehalfspace
+#+latex_compiler: xelatex
+#+options: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline author:t
+#+options: broken-links:nil c:nil creator:nil d:(not "LOGBOOK") date:t e:t
+#+options: email:t f:t inline:t num:t p:nil pri:nil prop:nil stat:t tags:t
+#+options: tasks:t tex:t timestamp:t title:t toc:nil todo:t |:t num:nil
+#+language: en
+#+author: Sandy Urazayev
+#+title: Final Project Outline
+#+subtitle: MATH 596
+#+date: 327; 12020 H.E.
+#+email: University of Kansas (ctu@ku.edu)
+* Introduction
+  - Introduce the problem of data rotting and resolution sharpening
+  - Introduce various examples of low-res images (old photos)
+
+* Data Overview
+  - Talk about the data required for this application
+  - Resolve around the quality of data needed for better results
+  - Introduce the datasets we are using
+  - Talk about data usage limitations
+
+* Design Implementation
+  - Talk about the convolution neural networks, how to design them
+  - Discussion on input-output vector sizes
+  - Talk about dividing data into training sets and validation sets
+  - Discovering ways to record error from the ground-truth
+
+* Implementation
+  - Actual step-by-step implementation of the problem
+  - Include code snippets from Keras
+  - Introduce annoying issues with neural networks and fine-tuning
+  - More hardships encountered
+
+* Mathematical Basis
+  - More in-depth look into the system
+  - Talk about the math basis for the implemented layers
+  - Backpropagation techniques when using convolution
+
+* Results
+  - Show predictions for our test data
+  - Record the errors from the ground truth data
+
+* Conclusion
+  - Conclusion on the problems
+  - Areas for improvement
+  - Comparing to cutting-edge research

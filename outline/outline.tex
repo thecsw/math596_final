@@ -1,0 +1,133 @@
+% Created 2020-12-10 Thu 21:44
+% Intended LaTeX compiler: xelatex
+\documentclass[12pt]{article}
+\usepackage{graphicx}
+\usepackage{grffile}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage{minted}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{setspace}
+\usepackage{subcaption}
+\usepackage{mathtools}
+\usepackage{xfrac}
+\usepackage[margin=1in]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{epsf}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{pslatex}
+\usepackage{hyperref}
+\usepackage[adobe-utopia]{mathdesign}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{textgreek}
+\renewcommand*{\textgreekfontmap}{%
+{phv/*/*}{LGR/neohellenic/*/*}%
+{*/b/n}{LGR/artemisia/b/n}%
+{*/bx/n}{LGR/artemisia/bx/n}%
+{*/*/n}{LGR/artemisia/m/n}%
+{*/b/it}{LGR/artemisia/b/it}%
+{*/bx/it}{LGR/artemisia/bx/it}%
+{*/*/it}{LGR/artemisia/m/it}%
+{*/b/sl}{LGR/artemisia/b/sl}%
+{*/bx/sl}{LGR/artemisia/bx/sl}%
+{*/*/sl}{LGR/artemisia/m/sl}%
+{*/*/sc}{LGR/artemisia/m/sc}%
+{*/*/sco}{LGR/artemisia/m/sco}%
+}
+\makeatletter
+\newcommand*{\rom}[1]{\expandafter\@slowromancap\romannumeral #1@}
+\makeatother
+\DeclarePairedDelimiterX{\infdivx}[2]{(}{)}{%
+#1\;\delimsize\|\;#2%
+}
+\newcommand{\infdiv}{D\infdivx}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\def\Z{\mathbb Z}
+\def\R{\mathbb R}
+\def\C{\mathbb C}
+\def\N{\mathbb N}
+\def\Q{\mathbb Q}
+\def\noi{\noindent}
+\onehalfspace
+\author{Sandy Urazayev\thanks{University of Kansas (ctu@ku.edu)}}
+\date{327; 12020 H.E.}
+\title{Final Project Outline\\\medskip
+\large MATH 596}
+\hypersetup{
+ pdfauthor={Sandy Urazayev},
+ pdftitle={Final Project Outline},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 28.0.50 (Org mode 9.3)}, 
+ pdflang={English}}
+\begin{document}
+
+\maketitle
+\section*{Introduction}
+\label{sec:org5b6727a}
+\begin{itemize}
+\item Introduce the problem of data rotting and resolution sharpening
+\item Introduce various examples of low-res images (old photos)
+\end{itemize}
+
+\section*{Data Overview}
+\label{sec:orgee1b949}
+\begin{itemize}
+\item Talk about the data required for this application
+\item Resolve around the quality of data needed for better results
+\item Introduce the datasets we are using
+\item Talk about data usage limitations
+\end{itemize}
+
+\section*{Design Implementation}
+\label{sec:org5398d36}
+\begin{itemize}
+\item Talk about the convolution neural networks, how to design them
+\item Discussion on input-output vector sizes
+\item Talk about dividing data into training sets and validation sets
+\item Discovering ways to record error from the ground-truth
+\end{itemize}
+
+\section*{Implementation}
+\label{sec:org310c4b6}
+\begin{itemize}
+\item Actual step-by-step implementation of the problem
+\item Include code snippets from Keras
+\item Introduce annoying issues with neural networks and fine-tuning
+\item More hardships encountered
+\end{itemize}
+
+\section*{Mathematical Basis}
+\label{sec:org20a6c39}
+\begin{itemize}
+\item More in-depth look into the system
+\item Talk about the math basis for the implemented layers
+\item Backpropagation techniques when using convolution
+\end{itemize}
+
+\section*{Results}
+\label{sec:org6c0b678}
+\begin{itemize}
+\item Show predictions for our test data
+\item Record the errors from the ground truth data
+\end{itemize}
+
+\section*{Conclusion}
+\label{sec:org520bb78}
+\begin{itemize}
+\item Conclusion on the problems
+\item Areas for improvement
+\item Comparing to cutting-edge research
+\end{itemize}
+\end{document}
